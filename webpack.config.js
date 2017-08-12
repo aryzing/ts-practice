@@ -5,5 +5,10 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist'),
-  }
+  },
+  module: {
+    rules: [
+      {test: /\.tsx?/, loader: 'ts-loader'},
+    ],
+  },
 }
