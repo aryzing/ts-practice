@@ -11,4 +11,8 @@ module.exports = {
       {test: /\.tsx?/, loader: 'ts-loader'},
     ],
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+    mainFields: ['types', 'main'],
+  }
 }
