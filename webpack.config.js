@@ -8,7 +8,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {test: /\.tsx?/, loader: 'ts-loader'},
+      {test: /\.tsx?/, use: ['babel-loader', 'ts-loader']},
     ],
   },
   resolve: {
