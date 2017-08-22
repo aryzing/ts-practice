@@ -8,7 +8,7 @@ module.exports = {
     port: 9000,
     publicPath: '/',
   },
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist'),
@@ -20,7 +20,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({template: 'src/index.ejs'}),
     new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {

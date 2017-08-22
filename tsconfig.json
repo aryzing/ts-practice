@@ -3,6 +3,7 @@
     "moduleResolution": "Node",
     "module": "ESNext",
     "target": "ESNext",
-    "outDir": "distJS"
+    "outDir": "distJS",
+    "jsx": "Preserve"
   }
 }
